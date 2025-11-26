@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import PageNotFound from "./pages/PageNotFound"
+import Cart from "./pages/Cart";
 
 function App() {
   const location = useLocation();
@@ -10,11 +11,12 @@ function App() {
   return (
     <>
       <div>
-        {(location.pathname==="/" || location.pathname==="/products")
+        {(location.pathname==="/" || location.pathname==="/products" || location.pathname==="/cart")
         &&<Navbar />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<PageNotFound/>}/>
         </Routes>
       </div>
