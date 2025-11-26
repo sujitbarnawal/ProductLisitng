@@ -11,6 +11,7 @@ This project is a **simple product listing webpage** built using **React**. It d
 - **Category filter dropdown**  
 - **Infinite scroll** to load more products dynamically  
 - **Fully responsive design** for desktop, tablet, and mobile  
+- **Add to cart**
 
 ---
 
