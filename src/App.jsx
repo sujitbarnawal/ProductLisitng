@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import PageNotFound from "./pages/PageNotFound"
 import Cart from "./pages/Cart";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   const location = useLocation();
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <div>
+        <ToastContainer/>
         {(location.pathname==="/" || location.pathname==="/products" || location.pathname==="/cart")
         &&<Navbar />}
         <Routes>

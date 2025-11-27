@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -40,6 +41,7 @@ const Products = () => {
     }
 
     saveCart(updatedCart);
+    toast.success("Added to cart successfully!")
   };
 
   const getCategories = async () => {
